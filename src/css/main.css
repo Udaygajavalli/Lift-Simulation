@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: var(--base-transition);
+}
+
+.buttonLift {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    margin: 11px 18px;
+}
+
+.button button {
+    margin: 2px;
+}
+.up { width: auto;
+    font-size: 13px;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: darkslateblue;
+}
+.down {
+    width: auto;
+    font-size: 13px;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: darkslateblue;
+}
+
+#simulationPage{
+    margin: 30px;
+}
+
+.liftContainer {
+    display: flex;
+    margin-left: 10px;
+}
+.lift {
+    width: 50px;
+    height: 60px;
+    background-color: gray;
+    border: 2px solid black;
+    margin-right: 5px;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+}
+
+.gates {
+    display: flex;
+}
+.gate1,
+.gate2 {
+    width: 25px;
+    height: 60px;
+    margin: 1px;
+    background-color: darkslateblue;
+    transition: width 2.5s ease-in-out;
+}
+.gate1-move {
+    transform: translateX(-100%);
+}
+
+.gate2-move {
+    transform: translateX(100%);
+}
+
+/* second page ko none krh de rha hai */
+.simulationPage {
+    display: none;
+    margin: 4% auto;
+}
+.hrfloorName {
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+}
+hr {
+    flex-grow: 1;
+    height: 1px;
+    border-top: 2px solid salmon;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.navToInputPage {
+    font-size: 18x;
+    margin: 5px 0 10px 3px;
+    background-color: darkslateblue;
+    color: white;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (width>500px) {
+    .lift {
+        margin-right: 55px;
+    }
+    .liftContainer {
+        margin-left: 50px;
+    }
+}
+
+
